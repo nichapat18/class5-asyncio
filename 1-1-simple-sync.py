@@ -11,7 +11,7 @@ def sleep():
 def sum(name, numbers):
     total = 0
     for number in numbers:
-        print(f'Task {name} : Computing {total} + {number}')
+        print(f'Task {name} : Computing {total} + {number}')   #นำตัวเลขมาบวกกันจนกว่าจะครบ loop แล้วแสดงค่า
         sleep()
         total += number
     print(f'Task {name}: Sum = {total}\n ')

@@ -7,7 +7,7 @@ import time
 # Output = วันและเวลา hello start/stop 
 async def hello(i):
     print(f"{time.ctime()} hello {i} started")
-    await asyncio.sleep(4)
+    await asyncio.sleep(4)   # sleep for 4 second
     print(f"{time.ctime()} hello {i} done")
 
 # การสร้าง main และสร้างtask2 ขึ้นมา
@@ -19,8 +19,8 @@ async def main():
     await asyncio.gather(task1, task2)
 
 #
-if __name__ == '__main__':
-    start = time.time()
+if __name__ == '__main__':  # สามารถเลือกรันที่ต้องการได้
+    start = time.time()    # Time start
     asyncio.run(main())    # run main function
     end = time.time()      #end of time
     print(f'Time: {end-start:.2f} sec') 
