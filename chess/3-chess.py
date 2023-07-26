@@ -25,3 +25,7 @@ if __name__ == "__main__":
     for j in range(opponents):
         main(j)
     print(f"Finished in {round(time.perf_counter() - start_time)} secs")
+
+#=========================#
+    # Time for thinging : 5 seconds : opponent 5o seconds
+    # 1 game can play 30 round. 24 boards : 60*30*24 = 43,200 seconds = 43,200/60/60 = 12 hours
